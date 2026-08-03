@@ -1,0 +1,41 @@
+{
+  "id": "data.users",
+  "kind": "data",
+  "entity": "user",
+  "rows": [
+    {
+      "code": "admin",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "role": "admin",
+      "active": true,
+      "password": "2615402659",
+      "defaultCompany": "HQ",
+      "defaultApp": "demo"
+    },
+    {
+      "code": "demo",
+      "name": "Demo User",
+      "email": "demo@example.com",
+      "role": "user",
+      "active": true,
+      "password": "3594706848",
+      "defaultCompany": "HQ",
+      "companies": ["HQ"],
+      "defaultApp": "demo",
+      "apps": ["demo"]
+    },
+    {
+      "code": "test",
+      "name": "test",
+      "email": "test@gmail.com",
+      "role": "user",
+      "active": true,
+      "defaultCompany": "FER",
+      "companies": ["FER"],
+      "defaultApp": "ferreteria",
+      "apps": ["ferreteria"],
+      "password": "3632233996"
+    }
+  ]
+}

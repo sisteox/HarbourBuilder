@@ -1,0 +1,64 @@
+{
+  "id": "demo.main",
+  "kind": "demo",
+  "mode": "menu",
+  "title": "Centro de aprendizaje",
+  "subtitle": "Elige qué quieres aprender. Cada opción es un tour guiado con pausa, siguiente y resaltado en pantalla.",
+  "groups": [
+    {
+      "id": "start",
+      "label": "Empezar",
+      "items": [
+        {
+          "id": "overview",
+          "label": "Visita general del producto",
+          "ref": "demo.overview",
+          "description": "Arquitectura meta, menú, CRM, verticals, KPIs y multi-empresa. Ideal la primera vez.",
+          "durationHint": "~4 min"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "label": "Construir pantallas",
+      "items": [
+        {
+          "id": "list_edit",
+          "label": "Listas + formulario de edición",
+          "ref": "demo.list_edit",
+          "description": "Cómo se define una pantalla layout list, el edit por defecto (multi-columna) y cómo el admin lo personaliza en Design form.",
+          "durationHint": "~8 min",
+          "recommended": true
+        },
+        {
+          "id": "dashboard",
+          "label": "Dashboard (KPIs + gráficos)",
+          "ref": "demo.dashboard",
+          "description": "Layout dashboard: widgets KPI, barras y donut, grid 12 columnas, varios dataRef y cómo configurarlo todo en Design form.",
+          "durationHint": "~7 min"
+        },
+        {
+          "id": "designers",
+          "label": "Diseñadores (admin)",
+          "ref": "demo.designers",
+          "description": "Design form y Edit app: columnas, toolbar, diálogo de edición, branding, locale y menú del vertical.",
+          "durationHint": "~3 min",
+          "adminOnly": true
+        }
+      ]
+    },
+    {
+      "id": "runtime",
+      "label": "Runtime y contexto",
+      "items": [
+        {
+          "id": "multi_app",
+          "label": "Multi-empresa y multi-app",
+          "ref": "demo.multi_app",
+          "description": "Empresas con N apps (verticals), selector de contexto, menú por app y filtro de datos por empresa.",
+          "durationHint": "~3 min"
+        }
+      ]
+    }
+  ]
+}

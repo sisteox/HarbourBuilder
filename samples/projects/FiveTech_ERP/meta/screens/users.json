@@ -1,0 +1,109 @@
+{
+  "id": "screen.users",
+  "kind": "screen",
+  "layout": "list",
+  "title": "Users",
+  "dataRef": "data.users",
+  "keyField": "code",
+  "searchFields": [
+    "code",
+    "name",
+    "email",
+    "role"
+  ],
+  "grid": {
+    "columns": [
+      {
+        "id": "code",
+        "label": "User code",
+        "type": "text"
+      },
+      {
+        "id": "name",
+        "label": "Name",
+        "type": "text"
+      },
+      {
+        "id": "email",
+        "label": "E-mail",
+        "type": "text"
+      },
+      {
+        "id": "role",
+        "label": "Role",
+        "type": "select",
+        "options": [
+          "admin",
+          "user"
+        ]
+      },
+      {
+        "id": "active",
+        "label": "Active",
+        "type": "checkbox"
+      },
+      {
+        "id": "defaultCompany",
+        "label": "Default company",
+        "type": "select",
+        "options": [
+          "HQ",
+          "MAD",
+          "BCN",
+          "FER"
+        ],
+        "hint": "Company used at login."
+      },
+      {
+        "id": "companies",
+        "label": "Allowed companies",
+        "type": "checklist",
+        "options": [
+          "HQ",
+          "MAD",
+          "BCN",
+          "FER"
+        ],
+        "hint": "Non-admin: only these companies are visible/switchable. Empty = only default company (no switch). Default company is always included on save. Admin always sees all."
+      },
+      {
+        "id": "defaultApp",
+        "label": "Default app",
+        "type": "select",
+        "options": [
+          "clinic",
+          "demo",
+          "services",
+          "retail",
+          "ferreteria"
+        ],
+        "hint": "Preferred app at login if that company has it linked. Must exist on the default company (e.g. demo app on HQ)."
+      },
+      {
+        "id": "apps",
+        "label": "Allowed apps",
+        "type": "checklist",
+        "options": [
+          "clinic",
+          "demo",
+          "services",
+          "retail",
+          "ferreteria"
+        ],
+        "hint": "Non-admin: only these apps/verticals are selectable. Empty = only default app (no switch). Default app is always included on save. Admin always sees all company apps."
+      },
+      {
+        "id": "password",
+        "label": "Password",
+        "type": "password",
+        "hint": "Plain on edit; only CRC stored. Blank keeps current."
+      }
+    ]
+  },
+  "toolbar": [
+    "add",
+    "edit",
+    "delete",
+    "refresh"
+  ]
+}
